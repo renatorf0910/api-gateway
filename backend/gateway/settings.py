@@ -90,9 +90,11 @@ DATABASES = {
 }
 
 
-KEYCLOAK_URL = "http://localhost:8080"
+KEYCLOAK_URL = "http://keycloak:8080"
 KEYCLOAK_REALM = "api-gateway"
 KEYCLOAK_CLIENT_ID = "django-backend"
+KEYCLOAK_ISSUER = "http://localhost:8080/realms/api-gateway"
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
